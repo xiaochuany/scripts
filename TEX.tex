@@ -1,0 +1,220 @@
+%\documentclass[11pt,article,reqno]{amsart}
+\documentclass[12pt,reqno]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{enumerate}
+\usepackage{lmodern}
+\usepackage[T1]{fontenc}
+\usepackage{verbatim}
+\usepackage{textcomp}
+
+\usepackage[english]{babel}
+\usepackage[a4paper,vmargin={3.5cm,3.5cm},hmargin={2.5cm,2.5cm}]{geometry}
+\usepackage[font=sf, labelfont={sf,bf}, margin=1cm]{caption}
+\usepackage[pdftex]{hyperref}
+\usepackage[pdftex]{color,graphicx}
+\usepackage{xcolor}
+
+% math packages:
+\usepackage{amsmath,amsfonts,amssymb,amsthm,mathrsfs,mathtools,bbm}
+\usepackage{empheq}
+% Theorems
+%-----------------------------------------------------------------
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{fact}[theorem]{Fact}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{assumption}[theorem]{Assumption}
+
+
+% Shortcuts.
+%-----------------------------------------------------------------
+
+%Lazy shortcuts
+
+\def\FNS{\mathbf{F}(\mathbf{N}_\sigma)}
+
+% Blackboard
+\def\RR{\mathbb{R}}
+\def\R{\mathbb{R}}
+\def\ZZ{\mathbb{Z}}
+\def\NN{\mathbb{N}}
+\def\QQ{\mathbb{Q}}
+\def\PP{\mathbb{P}}
+\def\XX{\mathbb{X}}
+\def\YY{\mathbb{Y}}
+\def\EE{\mathbb{E}}
+\newcommand{\ex}{\mathbb{E}}
+\def\Var{\mathbb{V}\mathrm{ar}}
+\def\Cov{\mathbb{C}\mathrm{ov}}
+\def\Corr{\mathbb{C}\mathrm{orr}}
+\def\1{\mathbbm{1}}
+% Greeks
+\def\al{\alpha}
+\def\be{\beta}
+%\def\ga{\gamma}
+%\def\de{\delta}
+\def\om{\omega}
+%\def\ep{\varepsilon}
+\def\ph{\varphi}
+\def\la{\lambda}
+% Calligraphic
+\newcommand{\cP}{\mathcal{P}}
+\newcommand{\cX}{\mathcal{X}}
+\newcommand{\cC}{\mathcal{C}}
+
+\newcommand{\cY}{\mathcal{Y}}
+\newcommand{\ytil}{\tilde{y}}
+
+% Sans Serif
+\def\sA{\mathsf{A}}
+\def\sB{\mathsf{B}}
+\def\sC{\mathsf{C}}
+\def\sD{\mathsf{D}}
+\def\sK{\mathsf{K}}
+\def\sW{\mathsf{W}}
+\def\sS{\mathsf{S}}
+\def\sO{\mathsf{O}}
+\def\sP{\mathsf{P}}
+% Bold
+\def\bx{\mathbf{x}}
+\def\by{\mathbf{y}}
+\def\bw{\mathbf{w}}
+\def\bz{\mathbf{z}}
+\def\bF{\mathbf{F}}
+\def\b0{\mathbf{0}}
+\def\bM{\mathbf{M}}
+\def\bZ{\mathbf{Z}}
+\def\bN{\mathbf{N}}
+% Metrics
+\def\dtv{d_{\mathrm{TV}}}
+\def\dk{{d_\mathrm{K}}}
+\def\dw{d_{\mathrm{W}}}
+\def\dfm{d_{\mathrm{FM}}}
+\def\d2{d_2}
+\def\dc{d_\mathrm{c}}
+\def\dh{d_\mathrm{H}}
+% Decorations
+%\def\ov{\overline}
+\def\un{\underline}
+\def\wt{\widetilde}
+\def\wh{\widehat}
+% Exotic Symbols
+\def\con{\xleftrightarrow}
+% Script
+\def\scr{\mathscr}
+
+\newcommand{\essinf}{{\rm ess~inf}}
+\newcommand{\hyp}{{\rm Hyp}}
+\newcommand{\bea}{\begin{eqnarray}}
+\newcommand{\eea}{\end{eqnarray}}
+\newcommand{\bean}{\begin{eqnarray*}}
+\newcommand{\eean}{\end{eqnarray*}}
+\newcommand{\eps}{\varepsilon}
+\newcommand{\cN}{{\cal N}}
+\newcommand{\Po}{{\cal P}}
+\newcommand{\An}{A_n}%Alternative $A_{n,\alpha}$.
+\renewcommand{\emptyset}{\varnothing}
+
+\newcommand{\fmax}{f_{\rm max}}
+\newcommand{\Cor}{\mathsf{Cor}}
+\newcommand{\A}{\mathsf{A}}
+\newcommand{\tod}{\overset{d}\longrightarrow}
+\newcommand{\toP}{\overset{\PP}\longrightarrow}
+
+\renewcommand{\eta}{\cP}
+\newcommand{\Gum}{{\mathsf{Gu}}}
+\newcommand{\PRV}{{\mathsf{Po}}}
+
+
+\numberwithin{equation}{section}
+
+
+% Notations of the article
+% -----------------------------------------------------------------
+%\usepackage[notref, notcite]{showkeys}
+\DeclareMathOperator\NNG{NNG}
+\DeclareMathOperator\MST{MST}
+\DeclareMathOperator\diam{diam}
+%\DeclareMathOperator\dist{dist}
+\newcommand{\dist}{{\rm dist}}
+\setcounter{footnote}{1}
+% -----------------------------------------------------------------
+
+
+\begin{document}
+\title{\bf line coverage}
+\author{}
+
+\date{\today}
+
+\maketitle
+
+\begin{abstract}   
+%\\
+%\noindent{\bf Keywords:} \\
+%\noindent{\bf AMS 2010 Classification:}
+\end{abstract}
+%\tableofcontents
+
+
+ 
+
+\bibliographystyle{plain}
+\begin{thebibliography}{123}
+
+%% : 
+%    single author :  Pen05 ...
+%    several authors: BY05  ...
+%
+
+%\bibitem{AGG89} Arratia, R.; Goldstein, L.; Gordon, L. Two moments suffice for Poisson approximations: the Chen-Stein method. {\it Ann. Probab.} 17 (1989), no. 1, 9--25.
+%
+%\bibitem{BHJ} Barbour, A. D., Holst, L. and Janson, S. (1992)
+%{\em Poisson Approximation.} Oxford University Press, Oxford.
+%	Oxford Studies in Probability, 2.  Oxford Science Publications. {\it The Clarendon Press, Oxford University Press, New York}, 1992. {\rm x}+277 pp.
+%
+%\bibitem{Chen75} Chen, Louis H. Y. Poisson approximation for dependent trials. {\it Ann. Probab.} 3 (1975), no. 3, 534--545. 
+%
+%
+%
+%		
+%\bibitem{HPY23}
+%	Higgs, F., Penrose, M.D. and Yang, X. (2023)
+%	Covering one point process with another.
+%	Preprint, version from 4 September 2023.
+%
+%
+%
+%\bibitem{LP18} Last, G. %Günter 
+%	and Penrose, M. (2018)  {\em Lectures on the Poisson process.}
+%		%Institute of Mathematical Statistics Textbooks, 7.
+%		 Cambridge University Press, Cambridge.
+%		 %, 2018. xx+293 pp.
+%
+%\bibitem{Pen} Penrose, M. (2003) {\em Random Geometric Graphs}.
+%	%Oxford Studies in Probability, 5. {\it
+%	Oxford University Press, Oxford.
+%	%}, 2003. xiv+330 pp.
+%
+%
+%\bibitem{Pen18} Penrose, M. D. (2018) Inhomogeneous random graphs, 
+%	isolated vertices, and Poisson approximation. 
+%	{\it J. Appl. Probab.} {\bf 55},
+%	%(2018), no. 1,
+%	112--136.
+%
+%\bibitem{Pen22} Penrose, M. D. (2023) Random Euclidean coverage from within.
+%	{\em Probab. Theory Related Fields} {\bf 185}, 747--814.
+
+
+\end{thebibliography} 
+
+
+\end{document}
+
